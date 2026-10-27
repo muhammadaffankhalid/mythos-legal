@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mythos Privacy Policy</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root { color-scheme: dark light; --bg:#111317; --ink:#e9e4d6; --dim:#a8a9ae; --gold:#e9c35a; --line:#2a2d35; }
+  @media (prefers-color-scheme: light) { :root { --bg:#faf8f2; --ink:#1d1f24; --dim:#5b5e66; --gold:#8a6a10; --line:#ddd8c8; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.65 Georgia, 'Times New Roman', serif; }
+  main { max-width:44rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+  h1 { font-size:2.1rem; margin:0 0 .25rem; color:var(--gold); font-weight:500; }
+  h2 { font-size:1.3rem; margin:2.4rem 0 .5rem; font-weight:500; }
+  p, li { margin:.6rem 0; }
+  .dim { color:var(--dim); font-size:.95rem; }
+  table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:.55rem .6rem; border-bottom:1px solid var(--line); }
+  th { color:var(--dim); font-weight:600; }
+  a { color:var(--gold); }
+</style>
+</head>
+<body>
+<main>
+<h1>Mythos Privacy Policy</h1>
+<p class="dim">Last updated: 27 October 2026</p>
+
+<h2>Who we are</h2>
+<p>Mythos ("we", "us") is run by Affan Khalid, United Kingdom. We are the controller of your personal data. You can reach us at <a href="mailto:affandevv@gmail.com">affandevv@gmail.com</a>.</p>
+<p>Mythos is a tool for reflection and entertainment. It is not therapy, medical, legal or financial advice. It is for adults only (18 and over), and we do not knowingly create accounts for anyone under 18.</p>
+
+<h2>What we collect and why</h2>
+<table>
+<tr><th>What</th><th>Why</th><th>Where it is kept</th></tr>
+<tr><td>Email address and sign in details</td><td>Your account</td><td>Supabase (database and authentication), London</td></tr>
+<tr><td>Date, time and place of birth</td><td>To work out your birth chart</td><td>Supabase</td></tr>
+<tr><td>Journal entries, tarot draws, quests, weekly chapters and your Book of You</td><td>Your own journey, which only you can read</td><td>Supabase</td></tr>
+<tr><td>Your messages to the Oracle and its replies</td><td>The conversation</td><td>Supabase</td></tr>
+<tr><td>Purchase and subscription status</td><td>To give you what you bought</td><td>RevenueCat and the App Store</td></tr>
+<tr><td>Crash reports (never your journal, Oracle or birth content)</td><td>Fixing errors</td><td>Sentry</td></tr>
+<tr><td>Usage events with fixed names, such as a screen being opened (never what you wrote)</td><td>Improving the app</td><td>PostHog</td></tr>
+</table>
+
+<h2>How your chart is worked out, and where the data comes from</h2>
+<p>Your birth chart and the sky shown in Mythos are calculated, not guessed. We work out the positions of the Sun, Moon and planets, and the eclipses and retrogrades, on our own servers with the open source Astronomy Engine library. We use your date, time and place of birth as the input. We do not send your birth details to NASA or any astronomy service to do this.</p>
+<p>The one exception to the library is Chiron, which it does not include. For Chiron we use a table of positions generated from NASA's JPL Horizons service. It contains no information about you.</p>
+<p>To find your birthplace and its time zone, we use open place data (the GeoNames database, through the all-the-cities dataset) and time zone boundaries from OpenStreetMap contributors (through the geo-tz dataset), which are looked up inside the app. The meanings we show come from our own written interpretation notes. This is for reflection, not scientific fact or a prediction.</p>
+
+<h2>How AI is used, what is sent, and what we keep</h2>
+<p>An AI model interprets those calculated facts. It does not calculate your chart. It reads the chart facts, and our interpretation notes, and puts them into words for you: your readings, the Oracle, daily themes, reports and the closing reflection on a chapter of your Book of You. The AI receives only what a feature needs: your birth chart facts and, for the Oracle and a chapter reflection, the words you wrote that the feature needs. AI can be wrong, so please treat what it says as a prompt for reflection.</p>
+<p><strong>We record each AI request and reply so that we can read the output and improve our prompts.</strong> The full text of the request and the reply, which can include your Oracle messages, journal text and birth chart details, is sent to PostHog (LLM analytics) and linked to your account. If you do not want your writing handled this way, please do not use the Oracle or the journal features that send it to the AI.</p>
+<p>A chapter reflection reads only that week's notes that you have not left out of your book. You can edit or remove it. We do not write one for a week whose notes suggest you are in distress.</p>
+
+<h2>Sensitive information</h2>
+<p>What you write can reveal your health, beliefs or personal circumstances. We treat it as sensitive. It is private to you, is never shown to other users, is never placed in analytics events, crash reports or logs, and is never used for advertising. Our lawful basis is your consent for the AI features and our contract with you for the rest of the app.</p>
+
+<h2>Who else receives your data</h2>
+<p>Only the companies that help us run Mythos: Supabase, RevenueCat, PostHog, Sentry, our AI service providers, and Apple for purchases. The astronomy and place data above are used inside our systems and receive nothing about you. We do not sell your data. Some of these companies may process data outside the UK. Where they do, we rely on the safeguards the law allows, such as the UK addendum to standard contractual clauses.</p>
+
+<h2>Your choices and rights</h2>
+<ul>
+<li>Delete your account in Profile. Your data is removed with it.</li>
+<li>Turn off reminders, the daily invitation and the weekly look back in Profile.</li>
+<li>Leave any journal note out of your Book of You from the note itself.</li>
+</ul>
+
+<h2>Notifications</h2>
+<p>Reminders are created on your phone, are off until you turn them on, and never contain what you wrote or your readings.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we will update this page and, when it matters, tell you in the app.</p>
+</main>
+</body>
+</html>
